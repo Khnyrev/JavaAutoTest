@@ -4,12 +4,26 @@ public class LearnCasses {
 
     public static void main(String[] args) {
 
-    Square s = new Square();
-    s.l l = 5;
-        System.out.println("площадь квадрата со стороной " + s.l + "=" + area(s));
+        hello("котики");
+        hello("User!");
+
+        double l = 5;
+        System.out.println("Площадь квадрата со сторонй " + l + " равна " + area(l));;
+
+        double a = 4;
+        double b = 6;
+        System.out.println("Площадь квадрата со сторонами " + a + " и " + b + " равна " + area(a,b));
     }
 
-    public static area (Square s) {
-        return s.l * s.l;
+    public static void hello(String somedody) {
+        System.out.println("Hello, " + somedody + "!!!");
+    }
+
+    public static double area(double l){
+        return l * l;
+    }
+
+    public static double area(double a, double b){
+        return a * b;
     }
 }
